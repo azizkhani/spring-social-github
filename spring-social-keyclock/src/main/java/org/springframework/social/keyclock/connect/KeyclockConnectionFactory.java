@@ -16,21 +16,23 @@
 package org.springframework.social.keyclock.connect;
 
 import org.springframework.social.connect.support.OAuth2ConnectionFactory;
+import org.springframework.social.keyclock.api.Keyclock;
 
 /**
  * Github ConnectionFactory implementation.
+ *
  * @author Keith Donald
  */
 public class KeyclockConnectionFactory extends OAuth2ConnectionFactory<Keyclock> {
 
-	/**
-	 * Creates a factory for Keyclock connections.
-	 *
-	 * @param clientId client ID
-	 * @param clientSecret client secret
-	 */
-	public KeyclockConnectionFactory(String clientId, String clientSecret) {
-		super("Keyclock", new KeyclockServiceProvider(clientId, clientSecret), new KeyclockAdapter());
-	}
+    /**
+     * Creates a factory for Keyclock connections.
+     *
+     * @param clientId     client ID
+     * @param clientSecret client secret
+     */
+    public KeyclockConnectionFactory(String clientId, String clientSecret) {
+        super("Keyclock", new KeyclockServiceProvider(clientId, clientSecret), new KeyclockAdapter());
+    }
 
 }

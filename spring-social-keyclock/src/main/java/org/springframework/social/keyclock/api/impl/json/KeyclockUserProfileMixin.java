@@ -25,7 +25,7 @@ import java.util.Date;
  *
  * @author Andy Wilkinson
  */
- abstract class KeyclockUserProfileMixin extends KeyclockObjectMixin {
+ abstract class KeyclockUserProfileMixin  {
 
     @JsonProperty("name")
     String name;

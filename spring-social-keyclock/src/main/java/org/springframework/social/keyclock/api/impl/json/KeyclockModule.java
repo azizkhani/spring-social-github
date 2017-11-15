@@ -16,7 +16,8 @@
 package org.springframework.social.keyclock.api.impl.json;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import org.springframework.social.keyclock.api.*;
+import org.springframework.social.keyclock.api.KeyclockUser;
+import org.springframework.social.keyclock.api.KeyclockUserProfile;
 
 /**
  * Jackson module for setting up mixin annotations on Keyclock model types.

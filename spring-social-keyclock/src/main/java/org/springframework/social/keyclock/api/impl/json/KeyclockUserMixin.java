@@ -23,7 +23,7 @@ import org.springframework.social.keyclock.api.KeyclockUser;
  *
  * @author Andy Wilkinson
  */
-abstract class KeyclockUserMixin extends KeyclockObjectMixin {
+abstract class KeyclockUserMixin  {
 
     String name;
 

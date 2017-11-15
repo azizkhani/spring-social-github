@@ -15,6 +15,8 @@
  */
 package org.springframework.social.keyclock.connect;
 
+import org.springframework.social.keyclock.api.Keyclock;
+import org.springframework.social.keyclock.api.impl.KeyclockTemplate;
 import org.springframework.social.oauth2.AbstractOAuth2ServiceProvider;
 import org.springframework.social.oauth2.OAuth2Template;
 

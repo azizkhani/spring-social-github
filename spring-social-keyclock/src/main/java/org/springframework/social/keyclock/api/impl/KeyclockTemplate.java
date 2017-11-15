@@ -17,7 +17,9 @@ package org.springframework.social.keyclock.api.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.social.keyclock.api.Keyclock;
 import org.springframework.social.keyclock.api.UserOperations;
+import org.springframework.social.keyclock.api.impl.json.KeyclockModule;
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 import org.springframework.social.oauth2.OAuth2Version;
 import org.springframework.web.client.RestOperations;
@@ -74,7 +76,7 @@ public class KeyclockTemplate extends AbstractOAuth2ApiBinding implements Keyclo
     protected MappingJackson2HttpMessageConverter getJsonMessageConverter() {
         MappingJackson2HttpMessageConverter converter = super.getJsonMessageConverter();
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new GitHubModule());
+        objectMapper.registerModule(new KeyclockModule());
         converter.setObjectMapper(objectMapper);
         return converter;
     }

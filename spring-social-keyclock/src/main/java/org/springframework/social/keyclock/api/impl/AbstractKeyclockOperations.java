@@ -24,10 +24,10 @@ import org.springframework.social.MissingAuthorizationException;
  *
  * @author Willie Wheeler (willie.wheeler@gmail.com)
  */
-class AbstractkeyclockOperations {
+class AbstractKeyclockOperations {
 	private final boolean isAuthorized;
 
-	public AbstractkeyclockOperations(boolean isAuthorized) {
+	public AbstractKeyclockOperations(boolean isAuthorized) {
 		this.isAuthorized = isAuthorized;
 	}
 

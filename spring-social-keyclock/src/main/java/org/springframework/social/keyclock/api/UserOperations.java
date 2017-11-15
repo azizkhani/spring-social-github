@@ -45,19 +45,4 @@ public interface UserOperations {
 	 */
 	String getProfileUrl();
 
-	/**
-	 * Public operation to return a given user's followers.
-	 *
-	 * @param user Keyclock user
-	 * @return list of followers
-	 */
-	List<KeyclockUser> getFollowers(String user);
-
-	/**
-	 * Public operation to return the users that a given user is following.
-	 *
-	 * @param user Keyclock user
-	 * @return list of users the given user is following
-	 */
-	List<KeyclockUser> getFollowing(String user);
 }

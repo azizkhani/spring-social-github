@@ -19,6 +19,7 @@ import org.springframework.social.connect.ApiAdapter;
 import org.springframework.social.connect.ConnectionValues;
 import org.springframework.social.connect.UserProfile;
 import org.springframework.social.connect.UserProfileBuilder;
+import org.springframework.social.keyclock.api.Keyclock;
 import org.springframework.social.keyclock.api.KeyclockUserProfile;
 import org.springframework.web.client.HttpClientErrorException;
 
@@ -29,9 +30,9 @@ import org.springframework.web.client.HttpClientErrorException;
  */
 public class KeyclockAdapter implements ApiAdapter<Keyclock> {
 
-	public boolean test(GitHub github) {
+	public boolean test(Keyclock keyclock) {
 		try {
-			github.userOperations().getUserProfile();
+			keyclock.userOperations().getUserProfile();
 			return true;
 		} catch (HttpClientErrorException e) {
 			// TODO : Beef up Keyclock's error handling and trigger off of a more specific exception

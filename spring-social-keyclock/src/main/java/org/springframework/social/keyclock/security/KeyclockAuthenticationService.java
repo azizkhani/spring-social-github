@@ -15,6 +15,8 @@
  */
 package org.springframework.social.keyclock.security;
 
+import org.springframework.social.keyclock.api.Keyclock;
+import org.springframework.social.keyclock.connect.KeyclockConnectionFactory;
 import org.springframework.social.security.provider.OAuth2AuthenticationService;
 
 public class KeyclockAuthenticationService extends OAuth2AuthenticationService<Keyclock> {

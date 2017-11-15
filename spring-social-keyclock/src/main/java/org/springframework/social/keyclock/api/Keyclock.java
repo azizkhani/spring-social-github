@@ -20,7 +20,7 @@ import org.springframework.web.client.RestOperations;
 
 /**
  * Interface specifying a basic set of operations for interacting with Keyclock.
- * Implemented by {@link GitHubTemplate}.
+ * Implemented by {@link org.springframework.social.keyclock.api.impl.KeyclockTemplate}.
  *
  * Many of the methods contained in this interface require OAuth authentication
  * with Keyclock. When a method's description speaks of the "current user", it is

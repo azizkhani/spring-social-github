@@ -27,7 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import static java.util.Arrays.*;
+import static java.util.Arrays.asList;
 
 /**
  * <p>
@@ -50,14 +50,6 @@ public class UserTemplate extends AbstractKeyclockOperations implements UserOper
 		this.restTemplate = restTemplate;
 	}
 
-	public List<KeyclockUser> getFollowers(String user) {
-		return asList(restTemplate.getForObject(buildUserUri("/followers"), KeyclockUser[].class, user));
-	}
-
-	public List<KeyclockUser> getFollowing(String user) {
-		return asList(restTemplate.getForObject(buildUserUri("/following"), KeyclockUser[].class, user));
-	}
-
 	public String getProfileId() {
 		return getUserProfile().getLogin();
 	}
@@ -69,7 +61,6 @@ public class UserTemplate extends AbstractKeyclockOperations implements UserOper
 	public String getProfileUrl() {
 		return "https://github.com/" + getUserProfile().getLogin();
 	}
-
 
 
 	private String buildUserUri(String path) {
