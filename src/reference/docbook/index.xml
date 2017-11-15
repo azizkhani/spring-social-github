@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:id="spring-social-reference"
-    xmlns:xi="http://www.w3.org/2001/XInclude"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+>
   <bookinfo>
     <title>Spring Social GitHub Reference Manual</title>
     <titleabbrev>Spring Social GitHub ${version}</titleabbrev>
@@ -35,7 +35,7 @@
   </bookinfo>
 
   <toc></toc>
-  
+
     <xi:include href="./overview.xml"/>
     <xi:include href="./connecting.xml"/>
     <xi:include href="./api.xml" />

@@ -92,8 +92,8 @@ configure(subprojects) { subproject ->
     }
 }
 
-project('spring-social-github') {
-    description = 'Github API'
+project('spring-social-keyclock') {
+    description = 'keyclock API'
     dependencies {
        compile "org.springframework.social:spring-social-core:$springSocialVersion"
        compile ("org.springframework.social:spring-social-config:$springSocialVersion")
@@ -107,7 +107,7 @@ project('spring-social-github') {
 }
 
 configure(rootProject) {
-    description = 'Spring Social GitHub'
+    description = 'Spring Social keyclock'
 
     apply plugin: 'docbook-reference'
 
@@ -120,7 +120,7 @@ configure(rootProject) {
 
     dependencies { // for integration tests
     }
-    
+
     task api(type: Javadoc) {
         group = 'Documentation'
         description = 'Generates aggregated Javadoc API documentation.'

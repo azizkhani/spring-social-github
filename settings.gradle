@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-rootProject.name = 'spring-social-github'
+rootProject.name = 'spring-social-keyclock'
 
 include 'docs'
-include 'spring-social-github'
+include 'spring-social-keyclock'
