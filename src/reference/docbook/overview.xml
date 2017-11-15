@@ -31,7 +31,7 @@
 		<programlisting language="xml"><![CDATA[
 <dependency>
   <groupId>org.springframework.social</groupId>
-  <artifactId>spring-social-github</artifactId>
+  <artifactId>spring-social-keyclock</artifactId>
   <version>${org.springframework.social.keyclock-version}</version>
 </dependency>]]>
 		</programlisting>
