@@ -47,7 +47,7 @@ public class SocialConfig {
 <bean id="connectionFactoryLocator" class="org.springframework.social.connect.support.ConnectionFactoryRegistry">
     <property name="connectionFactories">
         <list>
-            <bean class="org.springframework.social.keyclock.connect.GitHubConnectionFactory">
+            <bean class="org.springframework.social.keycloak.connect.GitHubConnectionFactory">
                 <constructor-arg value="${github.clientId}" />
                 <constructor-arg value="${github.clientSecret}" />
             </bean>

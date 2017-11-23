@@ -31,7 +31,7 @@ def customizePom(pom, gradleProject) {
         generatedPom.project {
             name = gradleProject.description
             description = gradleProject.description
-            url = 'https://github.com/spring-projects/spring-social-keyclock'
+            url = 'https://github.com/spring-projects/spring-social-keycloak'
             organization {
                 name = 'Spring'
                 url = 'http://projects.spring.io/spring-social'
@@ -44,9 +44,9 @@ def customizePom(pom, gradleProject) {
                 }
             }
             scm {
-                url = 'https://github.com/spring-projects/spring-social-keyclock'
-                connection = 'scm:git:git://github.com/spring-projects/spring-social-keyclock'
-                developerConnection = 'scm:git:git://github.com/spring-projects/spring-social-keyclock'
+                url = 'https://github.com/spring-projects/spring-social-keycloak'
+                connection = 'scm:git:git://github.com/spring-projects/spring-social-keycloak'
+                developerConnection = 'scm:git:git://github.com/spring-projects/spring-social-keycloak'
             }
             developers {
                 developer {

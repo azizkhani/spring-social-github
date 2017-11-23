@@ -92,8 +92,8 @@ configure(subprojects) { subproject ->
     }
 }
 
-project('spring-social-keyclock') {
-    description = 'keyclock API'
+project('spring-social-keycloak') {
+    description = 'keycloak API'
     dependencies {
        compile "org.springframework.social:spring-social-core:$springSocialVersion"
        compile ("org.springframework.social:spring-social-config:$springSocialVersion")
@@ -107,7 +107,7 @@ project('spring-social-keyclock') {
 }
 
 configure(rootProject) {
-    description = 'Spring Social keyclock'
+    description = 'Spring Social keycloak'
 
     apply plugin: 'docbook-reference'
 

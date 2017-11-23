@@ -47,11 +47,11 @@ if (connection != null) {
 		</para>
 
 		<programlisting language="java"><![CDATA[
-KeyclockUserProfile profile = github.getUserProfile();]]>
+KeycloakUserProfile profile = github.getUserProfile();]]>
 		</programlisting>
 
 		<para>
-			The <classname>KeyclockUserProfile</classname> returned from <methodname>getUserProfile()</methodname> includes several useful pieces of information about the user, including their...
+			The <classname>KeycloakUserProfile</classname> returned from <methodname>getUserProfile()</methodname> includes several useful pieces of information about the user, including their...
 		</para>
 
 		<itemizedlist>

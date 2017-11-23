@@ -13,38 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.social.keyclock.api.impl.json;
+package org.springframework.social.keycloak.api.impl.json;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.social.keyclock.api.KeyclockUserProfile;
-
-import java.util.Date;
+import org.springframework.social.keycloak.api.KeycloakUser;
 
 /**
- * Annotated mixin to add annotations to {@link KeyclockUserProfile}
+ * Annotated mixin to add annotations to {@link KeycloakUser}
  *
  * @author Andy Wilkinson
  */
- abstract class KeyclockUserProfileMixin  {
+@JsonIgnoreProperties(ignoreUnknown = true)
+abstract class KeycloakUserMixin  {
 
-    @JsonProperty("name")
     String name;
 
-    @JsonProperty("location")
-    String location;
-
-    @JsonProperty("company")
-    String company;
-
-    @JsonProperty("blog")
-    String blog;
-
-    @JsonProperty("email")
     String email;
 
-    KeyclockUserProfileMixin(
+    String bio;
+
+    KeycloakUserMixin(
             @JsonProperty("id") long id,
-            @JsonProperty("login") String login,
-            @JsonProperty("avatar_url") String avatarUrl,
-            @JsonProperty("created_at") Date createdAt) {}
+            @JsonProperty("name") String name,
+            @JsonProperty("email") String email) {}
 }
