@@ -28,9 +28,7 @@ import org.springframework.web.client.RestOperations;
  * <p>
  * The central class for interacting with Keycloak.
  * </p>
- * @author Craig Walls
- * @author Willie Wheeler (willie.wheeler@gmail.com)
- * @author Andy Wilkinson
+ * @author ali akbar azizkhani
  */
 public class KeycloakTemplate extends AbstractOAuth2ApiBinding implements Keycloak {
 

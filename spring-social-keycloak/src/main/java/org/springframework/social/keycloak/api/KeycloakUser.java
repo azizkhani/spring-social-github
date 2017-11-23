@@ -20,8 +20,7 @@ import java.io.Serializable;
 /**
  * A Keycloak user
  *
- * @author Willie Wheeler (willie.wheeler@gmail.com)
- * @author Andy Wilkinson
+ * @author ali akbar azizkhani
  */
 @SuppressWarnings("serial")
 public class KeycloakUser implements Serializable {

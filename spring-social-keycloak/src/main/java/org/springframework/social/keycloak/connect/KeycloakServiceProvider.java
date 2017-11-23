@@ -22,7 +22,7 @@ import org.springframework.social.oauth2.OAuth2Template;
 
 /**
  * Github ServiceProvider implementation.
- * @author Keith Donald
+ * @author ali akbar azizkhani
  */
 public class KeycloakServiceProvider extends AbstractOAuth2ServiceProvider<Keycloak> {
 

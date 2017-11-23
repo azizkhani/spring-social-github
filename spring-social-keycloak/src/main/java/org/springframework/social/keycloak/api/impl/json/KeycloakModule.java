@@ -21,7 +21,7 @@ import org.springframework.social.keycloak.api.KeycloakUser;
 /**
  * Jackson module for setting up mixin annotations on Keycloak model types.
  *
- * @author Andy Wilkinson
+ * @author ali akbar azizkhani
  */
 public class KeycloakModule extends SimpleModule {
 

@@ -25,8 +25,7 @@ import org.springframework.web.client.HttpClientErrorException;
 
 /**
  * Github ApiAdapter implementation.
- * @author Keith Donald
- * @author Andy Wilkinson
+ * @author ali akbar azizkhani
  */
 public class KeycloakAdapter implements ApiAdapter<Keycloak> {
 

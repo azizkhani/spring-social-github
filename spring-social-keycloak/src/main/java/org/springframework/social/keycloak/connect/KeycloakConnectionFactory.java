@@ -21,7 +21,7 @@ import org.springframework.social.keycloak.api.Keycloak;
 /**
  * Github ConnectionFactory implementation.
  *
- * @author Keith Donald
+ * @author ali akbar azizkhani
  */
 public class KeycloakConnectionFactory extends OAuth2ConnectionFactory<Keycloak> {
 

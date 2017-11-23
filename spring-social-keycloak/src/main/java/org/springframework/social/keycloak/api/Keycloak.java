@@ -26,8 +26,7 @@ import org.springframework.web.client.RestOperations;
  * with Keycloak. When a method's description speaks of the "current user", it is
  * referring to the user for whom the access token has been issued.
  *
- * @author Craig Walls
- * @author Willie Wheeler (willie.wheeler@gmail.com)
+ * @author ali akbar azizkhani
  */
 public interface Keycloak extends ApiBinding {
 

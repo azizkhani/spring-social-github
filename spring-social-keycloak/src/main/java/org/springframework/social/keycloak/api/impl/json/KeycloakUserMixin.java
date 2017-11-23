@@ -22,7 +22,7 @@ import org.springframework.social.keycloak.api.KeycloakUser;
 /**
  * Annotated mixin to add annotations to {@link KeycloakUser}
  *
- * @author Andy Wilkinson
+ * @author ali akbar azizkhani
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 abstract class KeycloakUserMixin  {
